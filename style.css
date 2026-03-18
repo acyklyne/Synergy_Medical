@@ -248,11 +248,11 @@ h2{
   min-height: 560px;
 }
 .hero-image-patient {
-  width: 200%;
-  max-width: 600px;  /* try a larger value */
+  width: 300%;
+  max-width: 800px;  /* try a larger value */
   height: auto;
   display: block;
-  transform: translate(-180px, 100px);
+  transform: translate(-350px, 150px);
 }
 
 .clipboard {
