@@ -96,7 +96,6 @@ h2{
 }
 
 .section-text{
-  color: var(--color-text-soft);
   font-size: 0.97rem;
 }
 
@@ -106,8 +105,8 @@ h2{
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  min-height: 44px;
-  padding: 0.7rem 1.3rem;
+  min-height: 30px;
+  padding: 0.3rem 2.2rem;
   border-radius: var(--radius-pill);
   transition: background var(--transition), color var(--transition), transform var(--transition);
 }
@@ -196,7 +195,6 @@ h2{
   padding: 0;
 }
 .nav-list a {
-  color: var(--color-text-soft);
   font-size: 0.92rem;
   position: relative;
 }
@@ -242,7 +240,6 @@ h2{
   width: 700px;
 }
 .hero-copy p {
-  color: var(--color-text-soft);
   max-width: 560px;
   margin: 1.2rem 0 1.7rem;
 }
