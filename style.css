@@ -480,13 +480,12 @@ h2{
   position: relative;
   min-height: 490px;
 }
-.doctor-portrait {
-  bottom: 0;
+.doctor-image {
+  bottom: 60px;
   left: 52px;
-  width: 300px;
-  height: 430px;
-  background: linear-gradient(180deg, #f2c7a7 0 14%, #f6fbfc 14% 100%);
-  border-radius: 160px 160px 18px 18px;
+  width: 600px;
+  height: 480px;
+  transform: translate(40px, 10px);
 }
 .careers-copy { padding-bottom: 4rem; }
 
@@ -564,7 +563,10 @@ h2{
 .footer-tagline,
 .footer-links a,
 .footer-contact a,
-.footer-bottom p,
+.footer-bottom p{
+  color: #FFFFFF;
+  opacity: 50%;
+}
 .footer-meta a {
   color: rgba(255,255,255,0.82);
 }
