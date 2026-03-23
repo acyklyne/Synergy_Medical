@@ -349,18 +349,18 @@ h2{
 
 
 
-.section-soft{
+.section-soft {
   position: relative;
   overflow: hidden;
-  background: #edf6f8;
-  padding-top: 11rem;
-  padding-bottom: 6.5rem;
+  background: #E6F1F3;
+  padding-top: 12rem;
+  padding-bottom: 5rem;
 }
 
-.section-soft::before{
+.section-soft::before {
   content: "";
   position: absolute;
-  top: -170px;
+  top: -220px;
   left: 50%;
   transform: translateX(-50%);
   width: 160%;
@@ -370,16 +370,16 @@ h2{
   border-bottom-right-radius: 50% 100%;
 }
 
-.section-soft .container{
+.section-soft .container {
   position: relative;
   z-index: 1;
 }
 
-.curve-top{
-  display: none;
+.section-head {
+  margin-bottom: 4.5rem;
+  text-align: center;
 }
 
-.section-head { margin-bottom: 3rem; }
 
 .benefits-grid{
   display: grid;
@@ -415,10 +415,7 @@ h2{
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  background: #dcecf1;
-  color: var(--heading);
-  margin-bottom: 1.8rem;
+  margin-bottom: 2.0rem;
   font-size: 2rem;
 }
 
