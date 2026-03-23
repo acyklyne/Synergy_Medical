@@ -366,8 +366,8 @@ h2{
   width: 160%;
   height: 260px;
   background: #fdfefe;
-  border-bottom-left-radius: 50% 100%;
-  border-bottom-right-radius: 50% 100%;
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
 }
 
 .section-soft .container {
