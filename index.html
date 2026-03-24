@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Synergy Medical Group</title>
-  <meta name="description" content="Synergy Medical Group - Quality comprehensive care through seamless synergy." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Tenor+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Synergy Medical Group — Quality comprehensive care through seamless synergy." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Tenor+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+
+  <!-- ============================================================
+       HEADER
+  ============================================================ -->
   <header class="site-header">
     <div class="container nav-wrap">
-<a href="#" class="brand" aria-label="Synergy Medical Group home">
 
-        <img src="Images/Logo_dark.png" alt="Synergy Medical Group logo" class="brand-mark">
+      <a href="#" class="brand" aria-label="Synergy Medical Group home">
+        <img src="Images/Logo_dark.png" alt="Synergy Medical Group logo" class="brand-mark" />
       </a>
-
 
       <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
         <span></span>
@@ -27,7 +34,7 @@
         <span></span>
       </button>
 
-      <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
         <ul class="nav-list">
           <li><a href="#">Services</a></li>
           <li><a href="#" class="is-active">Facilities</a></li>
@@ -37,14 +44,21 @@
         </ul>
         <a href="#" class="btn btn-primary nav-cta">Contact</a>
       </nav>
+
     </div>
   </header>
 
+
   <main>
-    <section class="hero section">
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="hero section" aria-labelledby="hero-heading">
       <div class="container hero-grid">
+
         <div class="hero-copy">
-          <h1>Quality comprehensive care through seamless synergy</h1>
+          <h1 id="hero-heading">Quality comprehensive care through seamless synergy</h1>
           <p>
             Experience unparalleled patient care with our diverse team of medical providers.
             At Synergy Medical Group, we provide integrated, accessible care from inpatient
@@ -53,46 +67,54 @@
           <a href="#" class="text-link">Contact Us <span aria-hidden="true">›</span></a>
         </div>
 
-
         <div class="hero-media" aria-hidden="true">
-          <img src="Images/Image 1.png" alt="Elderly patient and doctor interaction" class="hero-image-patient">
+          <img src="Images/Image 1.png" alt="" class="hero-image-patient" />
         </div>
 
       </div>
 
+      <!-- Stats Bar -->
       <div class="container stats-shell">
-        <div class="stats-grid">
-          <div class="stat-item">
+        <div class="stats-grid" role="list" aria-label="Key statistics">
+
+          <div class="stat-item" role="listitem">
             <strong>15</strong>
             <span>Consumers Served</span>
           </div>
-          <div class="stat-item">
+
+          <div class="stat-item" role="listitem">
             <strong>15</strong>
             <span>Physicians</span>
           </div>
-          <div class="stat-item">
+
+          <div class="stat-item" role="listitem">
             <strong>30</strong>
             <span>Nurse Practitioners</span>
           </div>
-          <div class="stat-item">
+
+          <div class="stat-item" role="listitem">
             <strong>1,000</strong>
             <span>Patients Served Annually</span>
           </div>
+
         </div>
       </div>
     </section>
 
-    <section class="services section">
-      <div class="container two-col two-col-services">
+
+    <!-- ============================================================
+         SERVICES
+    ============================================================ -->
+    <section class="services section" aria-labelledby="services-heading">
+      <div class="container two-col">
 
         <div class="team-visual" aria-hidden="true">
-          <img src="Images/Image 2.png" alt="Medical team" class="team-image">
+          <img src="Images/Image 2.png" alt="" class="team-image" />
         </div>
-
 
         <div class="content-block">
           <p class="section-label">Services</p>
-          <h2 class="section-title">Our team has you covered</h2>
+          <h2 class="section-title" id="services-heading">Our team has you covered</h2>
           <p class="section-text">
             From our dedicated wound care team to our wide range of specialty providers,
             our crews are here to support continuity of care and improve patient outcomes.
@@ -100,106 +122,147 @@
             care to your facility and community.
           </p>
 
-          <div class="pill-list">
-            <a href="#" class="pill-item pill-highlight">Primary Care <span>›</span></a>
-            <a href="#" class="pill-item">Critical Care <span>›</span></a>
-            <a href="#" class="pill-item">Psychiatry <span>›</span></a>
-            <a href="#" class="pill-item">Wound Care <span>›</span></a>
-            <a href="#" class="pill-item">Podiatry <span>›</span></a>
-            <a href="#" class="pill-item">Urology <span>›</span></a>
-            <a href="#" class="pill-item">Acute Care <span>›</span></a>
-            <a href="#" class="pill-item">Nephrology <span>›</span></a>
-          </div>
+          <ul class="pill-list" aria-label="Service specialties">
+            <li><a href="#" class="pill-item pill-highlight">Primary Care <span aria-hidden="true">›</span></a></li>
+            <li><a href="#" class="pill-item">Critical Care <span aria-hidden="true">›</span></a></li>
+            <li><a href="#" class="pill-item">Psychiatry <span aria-hidden="true">›</span></a></li>
+            <li><a href="#" class="pill-item">Wound Care <span aria-hidden="true">›</span></a></li>
+            <li><a href="#" class="pill-item">Podiatry <span aria-hidden="true">›</span></a></li>
+            <li><a href="#" class="pill-item">Urology <span aria-hidden="true">›</span></a></li>
+            <li><a href="#" class="pill-item">Acute Care <span aria-hidden="true">›</span></a></li>
+            <li><a href="#" class="pill-item">Nephrology <span aria-hidden="true">›</span></a></li>
+          </ul>
         </div>
+
       </div>
     </section>
 
-    <section class="benefits section section-soft">
-      <div class="curve-top" aria-hidden="true"></div>
+
+    <!-- ============================================================
+         BENEFITS
+    ============================================================ -->
+    <section class="benefits section section-soft" aria-labelledby="benefits-heading">
       <div class="container">
+
         <div class="section-head text-center">
           <p class="section-label">Benefits</p>
-          <h2 class="section-title">Why work with us?</h2>
+          <h2 class="section-title" id="benefits-heading">Why work with us?</h2>
         </div>
 
         <div class="benefits-grid">
+
           <article class="benefit-card">
-
-<div class="icon-badge">
-  <img src="Images/clock.png" alt="Clock icon" width="72" height="72">
-</div>
-
+            <div class="icon-badge" aria-hidden="true">
+              <img src="Images/clock.png" alt="" width="72" height="72" />
+            </div>
             <h3>Speedy Bedside Visits</h3>
-            <p>While we make sure to have dedicated providers for each facility to ensure continuity of care, we have a full team of providers ready to fill in if needed. We’ll make sure patients are seen in a timely manner and as requested.</p>
+            <p>
+              While we make sure to have dedicated providers for each facility to ensure
+              continuity of care, we have a full team of providers ready to fill in if needed.
+              We'll make sure patients are seen in a timely manner and as requested.
+            </p>
           </article>
+
           <article class="benefit-card">
-
-<div class="icon-badge">
-  <img src="Images/communication.png" alt="Communication icon" width="72" height="72">
-</div>
-
+            <div class="icon-badge" aria-hidden="true">
+              <img src="Images/communication.png" alt="" width="72" height="72" />
+            </div>
             <h3>Excellent Communication</h3>
-            <p>We have a dedicated business line in place to ensure all concerns are addressed efficiently and fully. This line is monitored daily so facility staff, patients, and their family members can easily connect with a member on our care team.</p>
+            <p>
+              We have a dedicated business line in place to ensure all concerns are addressed
+              efficiently and fully. This line is monitored daily so facility staff, patients,
+              and their family members can easily connect with a member on our care team.
+            </p>
           </article>
+
           <article class="benefit-card">
-
-<div class="icon-badge">
-  <img src="Images/provider.png" alt="Provider icon" width="72" height="72">
-</div>
-
+            <div class="icon-badge" aria-hidden="true">
+              <img src="Images/provider.png" alt="" width="72" height="72" />
+            </div>
             <h3>Well-Rounded Providers</h3>
-            <p>Our team has a wide variety of experience from working in hospitals to managing their own clinics. This diverse background promotes effective decision making and a smooth flow of care for patients across all levels of the healthcare spectrum.</p>
+            <p>
+              Our team has a wide variety of experience from working in hospitals to managing
+              their own clinics. This diverse background promotes effective decision making and
+              a smooth flow of care for patients across all levels of the healthcare spectrum.
+            </p>
           </article>
+
           <article class="benefit-card">
-
-<div class="icon-badge">
-  <img src="Images/office.png" alt="Office icon" width="72" height="72">
-</div>
-
+            <div class="icon-badge" aria-hidden="true">
+              <img src="Images/office.png" alt="" width="72" height="72" />
+            </div>
             <h3>Dedicated Office Staff</h3>
-            <p>In addition to our physicians and nurse practitioners on the front lines, we also have a full team of nurses and secretaries to assist with gathering paperwork, scheduling appointments, and keeping family members up to date on care plans.</p>
+            <p>
+              In addition to our physicians and nurse practitioners on the front lines, we also
+              have a full team of nurses and secretaries to assist with gathering paperwork,
+              scheduling appointments, and keeping family members up to date on care plans.
+            </p>
           </article>
+
         </div>
       </div>
     </section>
 
-    <section class="process section">
-      <div class="container">
-        <div class="section-head text-center process-head">
-          <p class="section-label">Our Process</p>
-          <h2 class="section-title">How to get started</h2>
-          <p class="section-text narrow">
-            Whether you need comprehensive facility coverage or specialty support in select services,
-            we help create a smooth onboarding experience so your team can focus on patient care.
-          </p>
-        </div>
 
-        <div class="steps-grid">
-          <div class="step-wrap">
-            <p class="step-tag">Step 1</p>
-            <article class="card step-card">
-              <h3>Connect</h3>
-              <p>Let’s discuss your facility’s needs and how we can help.</p>
-            </article>
-          </div>
-          <div class="step-wrap">
-            <p class="step-tag">Step 2</p>
-            <article class="card step-card step-card-featured">
-              <h3>Credential</h3>
-              <p>Time to make it official with the paperwork and provider onboarding needed for us to join your team.</p>
-            </article>
-          </div>          <div class="step-wrap">
-            <p class="step-tag">Step 3</p>
-            <article class="card step-card">
-              <h3>Collaborate</h3>
-              <p>Partner with us to provide the best care to your patients.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- ============================================================
+     PROCESS
+============================================================ -->
+<section class="process section" aria-labelledby="process-heading">
+  <div class="container">
 
-    <section class="careers section">
+    <div class="section-head text-center process-head">
+      <p class="section-label">Our Process</p>
+      <h2 class="section-title" id="process-heading">How to get started</h2>
+      <p class="section-text narrow">
+        Whether you need comprehensive facility coverage or specialty support in select services,
+        we help create a smooth onboarding experience so your team can focus on patient care.
+      </p>
+    </div>
+
+    <!-- Step labels row -->
+    <div class="steps-labels">
+      <p class="step-tag">Step 1</p>
+      <p class="step-tag">Step 2</p>
+      <p class="step-tag">Step 3</p>
+    </div>
+
+    <!-- Process line image -->
+    <div class="process-line-wrap" aria-hidden="true">
+      <img src="Images/process_line.png" alt="" class="process-line-img" />
+    </div>
+
+    <!-- Cards -->
+    <ol class="steps-grid" aria-label="Getting started steps">
+
+      <li class="step-wrap">
+        <article class="card step-card">
+          <h3>Connect</h3>
+          <p>Let's discuss your facility's needs and how we can help.</p>
+        </article>
+      </li>
+
+      <li class="step-wrap">
+        <article class="card step-card step-card-featured">
+          <h3>Credential</h3>
+          <p>Time to make it official with the paperwork and provider onboarding needed for us to join your team.</p>
+        </article>
+      </li>
+
+      <li class="step-wrap">
+        <article class="card step-card">
+          <h3>Collaborate</h3>
+          <p>Partner with us to provide the best care to your patients.</p>
+        </article>
+      </li>
+
+    </ol>
+  </div>
+</section>
+
+    <!-- ============================================================
+         CAREERS
+    ============================================================ -->
+    <section class="careers section" aria-labelledby="careers-heading">
       <div class="container two-col careers-grid">
 
         <div class="careers-visual" aria-hidden="true">
@@ -207,95 +270,106 @@
             <span></span><span></span><span></span><span></span><span></span>
             <span></span><span></span><span></span><span></span><span></span>
           </div>
-          <img src="Images/Image 3.png" alt="Female medical professional" class="doctor-image">
+          <img src="Images/Image 3.png" alt="" class="doctor-image" />
         </div>
-
 
         <div class="content-block careers-copy">
           <p class="section-label">Careers</p>
-          <h2 class="section-title">Join our team</h2>
+          <h2 class="section-title" id="careers-heading">Join our team</h2>
           <p class="section-text">
             Synergy Medical Group offers physicians, nurse practitioners, and physician assistant
             opportunities in an inclusive environment built on collaboration, support, and
-            professional development. Our multidisciplinary approach creates room for meaningful work,
-            strong clinical partnership, and long-term growth.
+            professional development. Our multidisciplinary approach creates room for meaningful
+            work, strong clinical partnership, and long-term growth.
           </p>
           <a href="#" class="text-link">Learn More <span aria-hidden="true">›</span></a>
         </div>
+
       </div>
     </section>
 
-    <section class="testimonials section">
+
+    <!-- ============================================================
+         TESTIMONIALS
+    ============================================================ -->
+    <section class="testimonials section" aria-labelledby="testimonials-heading">
       <div class="container">
+
         <div class="section-head text-center">
           <p class="section-label">Patient Voices</p>
-          <h2 class="section-title">Our driving force</h2>
+          <h2 class="section-title" id="testimonials-heading">Our driving force</h2>
         </div>
 
-        <div class="testimonial-grid">
-          <article class="testimonial-card is-visible">
-            <p>
-              “I cannot recommend Dr. Mann enough. I have worked in the health field and as a medical professional 
-              for over fifteen years and he is one of my favorite physicians to work with.His bedside manner is excellent, 
-              and he and his team are quick to respond to any issue that arises. On a personal level, he is one of the only physicians 
-              I trusted with my family whenever we were going through our toughest times. <br> 
-              <br> Dr. Mann went out of his way to ensure that our family was 
-              fully cared for and we felt supported throughout the entire process. I cannot recommend Dr. Mann enough. 
-              He is an amazing asset to our community.”
-            </p>
+        <div class="testimonial-grid" role="list">
 
-            <div class="quote-badge">
-              <img src="Images/qoutation_mark.png" alt="" width="20" height="16">
+          <article class="testimonial-card is-visible" role="listitem">
+            <div class="quote-badge" aria-hidden="true">
+              <img src="Images/qoutation_mark.png" alt="" width="20" height="16" />
             </div>
+            <p>
+              "I cannot recommend Dr. Mann enough. I have worked in the health field and as a medical
+              professional for over fifteen years and he is one of my favorite physicians to work with.
+              His bedside manner is excellent, and he and his team are quick to respond to any issue
+              that arises. On a personal level, he is one of the only physicians I trusted with my
+              family whenever we were going through our toughest times.
+              <br /><br />
+              Dr. Mann went out of his way to ensure that our family was fully cared for and we felt
+              supported throughout the entire process. He is an amazing asset to our community."
+            </p>
             <div class="author-block">
               <strong>Elizabeth Wilson</strong>
               <span>DON of Charter Senior Living</span>
             </div>
-
           </article>
-          <article class="testimonial-card is-visible">
-            <p>
-              Dr Mann and Dr Robbins are exceptional healthcare providers who prioritize 
-              responsiveness and patient satisfaction. Their dedication to patient care is evident through the 
-              positive feedback they received from those they serve. The compassion and professionalism they exhibit create an environment 
-              that patients appreciate. <br> 
-              <br>Overall, Dr Mann and Dr Robbins come highly recommended for their 
-              outstanding care and ability to connect with their patients.
-            </p>
 
-            <div class="quote-badge">
-              <img src="Images/qoutation_mark.png" alt="" width="20" height="16">
+          <article class="testimonial-card is-visible" role="listitem">
+            <div class="quote-badge" aria-hidden="true">
+              <img src="Images/qoutation_mark.png" alt="" width="20" height="16" />
             </div>
+            <p>
+              Dr. Mann and Dr. Robbins are exceptional healthcare providers who prioritize
+              responsiveness and patient satisfaction. Their dedication to patient care is evident
+              through the positive feedback they received from those they serve. The compassion and
+              professionalism they exhibit create an environment that patients appreciate.
+              <br /><br />
+              Overall, Dr. Mann and Dr. Robbins come highly recommended for their outstanding care
+              and ability to connect with their patients.
+            </p>
             <div class="author-block">
               <strong>Merlina Dorval</strong>
               <span>Assistant Administrator of Lazy Lake Specialty Care</span>
             </div>
-
           </article>
+
         </div>
 
-        <div class="slider-dots" aria-label="testimonial pagination">
-          <button class="dot is-active" type="button" aria-label="Show testimonial slide 1"></button>
-          <button class="dot" type="button" aria-label="Show testimonial slide 2"></button>
-          <button class="dot" type="button" aria-label="Show testimonial slide 3"></button>
+        <div class="slider-dots" role="tablist" aria-label="Testimonial slides">
+          <button class="dot is-active" type="button" role="tab" aria-selected="true"  aria-label="Slide 1"></button>
+          <button class="dot"           type="button" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+          <button class="dot"           type="button" role="tab" aria-selected="false" aria-label="Slide 3"></button>
         </div>
+
       </div>
     </section>
+
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-<a href="#" class="brand brand-footer">
 
-          <img src="Images/Logo_light.png" alt="Synergy Medical Group logo" class="brand-mark">
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a href="#" class="brand brand-footer" aria-label="Synergy Medical Group home">
+          <img src="Images/Logo_light.png" alt="Synergy Medical Group logo" class="brand-mark" />
         </a>
         <p class="footer-tagline">Where synergy meets quality of care</p>
-
       </div>
 
       <div>
-        <h3>Quick Links</h3>
+        <h3>Quick links</h3>
         <ul class="footer-links">
           <li><a href="#">Facilities</a></li>
           <li><a href="#">Services</a></li>
@@ -307,23 +381,39 @@
       <div>
         <h3>Contact us</h3>
         <ul class="footer-contact">
-          <li><a href="#">252 424 3050</a></li>
-          <li><a href="#">contact@synergymedicalgroup.com</a></li>
-          <li><a href="#">252 658 8403</a></li>
+          <li>
+            <span class="fc-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 6 6l.72-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.28 16z"/></svg>
+            </span>
+            <a href="tel:3522343050">352-234-3050</a>
+          </li>
+          <li>
+            <span class="fc-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </span>
+            <a href="mailto:contact@FLrehabspecialists.com">contact@FLrehabspecialists.com</a>
+          </li>
+          <li>
+            <span class="fc-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            </span>
+            <a href="tel:3525534800">352-553-4800</a>
+          </li>
         </ul>
       </div>
+
     </div>
 
     <div class="container footer-bottom">
-      <p>© 2026 Synergy Medical Group. All rights reserved.</p>
-      <div class="footer-meta">
+      <p>© 2024 Synergy Medical Group. All rights reserved. Design by Connective Web Design.</p>
+      <nav class="footer-meta" aria-label="Legal links">
         <a href="#">Privacy Policy</a>
+        <span class="divider" aria-hidden="true">|</span>
         <a href="#">Terms &amp; Conditions</a>
-      </div>
+      </nav>
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
-</body>
-</html>
+
+  <!-- Scripts -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts
